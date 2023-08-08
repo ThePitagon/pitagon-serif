@@ -22,7 +22,7 @@ from PIL import ImageFont, ImageDraw, Image
 
 # Set the size of the font.
 FONT_SIZE = 500
-FONT_PATH_1 = "sources/release/v1.0.1/ttf/PitagonSerif-Regular.ttf"
+FONT_PATH_1 = "documentation/ibm-plex-serif/IBMPlexSerif-Regular.ttf"
 FONT_PATH_2 = "fonts/ttf/PitagonSerif-Regular.ttf"
 NUM_CHAR_LINE = 20
 LINE_GAP = 50
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     # lines of up to NUM_CHAR_LINE characters:
     # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output, "ABCDEFGH")
     # If the string is longer than NUM_CHAR_LINE characters, it will be split into multiple lines:
-    generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
     # If you provide a list of strings, the function will generate an image with each string on a separate line:
     # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output, ["ABC", "DEF", "GHI"])
@@ -145,9 +145,9 @@ if __name__ == "__main__":
     # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output,
     #                           ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKL", "MNOPQRSTUVWXYZ"])
     # Alphabet Characters
-    # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output,
-    #                           ["A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
-    #                            "a b c d e f g h i j k l m n o p q r s t u v w x y z"])
+    generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output,
+                              ["A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
+                               "a b c d e f g h i j k l m n o p q r s t u v w x y z"])
     # Numeric Characters
     # generate_comparison_image(FONT_PATH_1, FONT_PATH_2, output, ["0 1 2 3 4 5 6 7 8 9"])
     # Symbol Characters
